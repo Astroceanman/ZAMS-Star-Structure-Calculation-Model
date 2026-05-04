@@ -223,7 +223,7 @@ g_surf = 2.012e+04 cm s^-2
 
 The model also plots the radial profiles of mass, density, temperature, pressure, luminosity, nuclear energy generation rate, opacity, temperature gradients.
 
-The model also stores the calculated results in a `.txt` file. The file's name follows the format of `zams_structure_M1p20_X0p72_Y0p27_Z0p01.txt`, where `M1p20`, `X0p72`, `Y0p27`, `Z0p01` means $M_* = M_\odot$, $X = 0.72$, $Y = 0.27$, $Z = 0.01$, respectively.
+The model also stores the calculated results in a `.txt` file. The file's name follows the format of `zams_structure_M1p20_X0p72_Y0p27_Z0p01.txt`, where `M1p20`, `X0p72`, `Y0p27`, `Z0p01` means $M_* = 1.2$ $M_\odot$, $X = 0.72$, $Y = 0.27$, $Z = 0.01$, respectively.
 
 The table includes mass, radius, density, temperature, pressure, luminosity, total nuclear energy generation, opacity, radiative and adiabatic temperature gradients, actual temperature gradient, and the radiative or convective nature of each shell.
 
