@@ -229,6 +229,7 @@ The table includes mass, radius, density, temperature, pressure, luminosity, tot
 
 A example calculation of the ZAMS star with $M_*=1.2$ $M_\odot$, $X=0.72$, $Y=0.27$, and $Z=0.01$ is used in the code and the results table is uploaded.
 
+The calculation results of this example star from Modules for Experiments in Stellar Astrophysics (MESA) is also uploaded in `MESA_M1p20_X0p72_Z0p01` folder.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
