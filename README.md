@@ -34,8 +34,31 @@ pip install ipympl
 
 ## Input of the Model
 
-The model requires the 
+The model requires the input of the following quantities:
 
+• Mass of the star
+• Chemical composition of the star
+• Initial guess of central pressure
+• Initial guess of central temperature
+• Initial guess of radius
+• Initial guess of luminosity
+• Mass fraction of the fitting point
+
+If the initial gusses is None, then the model will use the apprximated initial gusses from mass-scaling guesses. 
+
+The choice of fitting point can affect the runtime and the number of iterations required for convergence. The maximum iterations is set as 100 in this model, and can be changed by changing "maxfev". The threshold of convergence is set as the residual smaller than $10^-5$ and can be changed by changing "xtol".
+
+```
+res = root(
+        shootf_residual,
+        np.ones(4),
+        args=(M_total, m_fit, m_inner, X, Y, Z, mu, scales),
+        method="hybr",
+        options={"xtol": 1.0e-5, "maxfev": 100},
+    )
+```
+
+The adjust of initial gussesd fitting point an is recommended for shorter runtime and fewer iterations.
 
 ## Import Statements
 The script begins with necessary import statements for data manipulation, numerical operations, plotting, and statistical analysis:
