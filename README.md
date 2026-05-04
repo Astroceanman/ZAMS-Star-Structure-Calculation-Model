@@ -227,7 +227,7 @@ The model also stores the calculated results in a `.txt` file. The file's name f
 
 The table includes mass, radius, density, temperature, pressure, luminosity, total nuclear energy generation, opacity, radiative and adiabatic temperature gradients, actual temperature gradient, and the radiative or convective nature of each shell.
 
-A example calculation of the ZAMS star with $M_*=1.2\,M_\odot,\,X=0.72,\,Y=0.27$, and $Z=0.01$ is used in the code and the results table is uploaded.
+A example calculation of the ZAMS star with $M_*=1.2\M_\odot,\X=0.72,\Y=0.27$, and $Z=0.01$ is used in the code and the results table is uploaded.
 
 
 ## Contributing
