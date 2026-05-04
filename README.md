@@ -66,7 +66,7 @@ Z = 0.01
 Y = 1.0 - X - Z
 ```
 
-X is the mass fraction of hydrogen, Y is the mass fraction of helium, and Z is the mass fraction of metals. Notably, the sum of X, Y, and Z should equal to one to ensure the physical valid model.
+X is the mass fraction of hydrogen, Y is the mass fraction of helium, and Z is the mass fraction of metals. Notably, the sum of X, Y, and Z should equal to 1.0 to ensure the physical valid model.
 
 If the initial gusses is None, then the model will use the apprximated initial gusses from mass-scaling guesses. 
 
@@ -226,6 +226,8 @@ The model also plots the radial profiles of mass, density, temperature, pressure
 The model also stores the calculated results in a `.txt` file. The file's name follows the format of `zams_structure_M1p20_X0p72_Y0p27_Z0p01.txt`, where `M1p20`, `X0p72`, `Y0p27`, `Z0p01` means $M_* = M_\odot$, $X = 0.72$, $Y = 0.27$, $Z = 0.01$, respectively.
 
 The table includes mass, radius, density, temperature, pressure, luminosity, total nuclear energy generation, opacity, radiative and adiabatic temperature gradients, actual temperature gradient, and the radiative or convective nature of each shell.
+
+A example calculation of the ZAMS star with $M_*=1.2\,M_\odot,\,X=0.72,\,Y=0.27$, and $Z=0.01$ is used in the code and the results table is uploaded.
 
 
 ## Contributing
