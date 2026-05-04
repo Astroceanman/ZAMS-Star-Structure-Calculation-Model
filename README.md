@@ -111,7 +111,7 @@ import matplotlib.ticker as mticker
 
 The opacity table with different compositions should be downloaded from [The Opacity Project](https://cds.unistra.fr/topbase/home.html).
 
-For the model, the table should be downloaded using the option "RMOs for a single chemical mixture," and with the table format $\{\log_{10}(T),\log_{10}(R)\}$. 
+For the model, the table should be downloaded under "OPserver", using the option "RMOs for a single chemical mixture," and with the table format $\{\log_{10}(T),\log_{10}(R)\}$. 
 
 The downloaded opacity table should be renamed according to the format `op_X0p72_Z0p01_logT_logR.txt`, where `X0p72` and `Z0p01` indicate the adopted hydrogen and metal mass fractions, \(X=0.72\) and \(Z=0.01\), respectively.
 
