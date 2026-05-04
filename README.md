@@ -186,7 +186,7 @@ def ZAMS_model(
 ):
 ```
 
-(8) The model integrates outward from the center and inward from the surface to a selected fitting point, as explained in the "Input" section. The four shooting parameters are $P_{\rm c}, \quad T_{\rm c}, \quad R_\ast, \quad L_\ast.$
+(8) The model integrates outward from the center and inward from the surface to a selected fitting point, as explained in the "Input" section. The four shooting parameters are $P_{\rm c}$, $T_{\rm c}$, $R_\ast$, $L_\ast$.
 
 (9) The model calculates the residual at the fitting point, defined as the logarithmic difference between the outward and inward solutions. Then the model will adjust the shooting parameters until the residual of all four dependent variables are within $10^{-5}$. The adjustment of this threshold is explain in the "Input" section
 
