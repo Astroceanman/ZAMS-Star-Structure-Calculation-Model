@@ -8,10 +8,15 @@ This model calculate the structure of zero-age main-sequence (ZAMS) stars with d
 Ensure that Python 3.7 or higher is installed. The code requires the following Python packages:
 
 • numpy
+
 • scipy
+
 • matplotlib
+
 • pandas
+
 • os
+
 • math
 
 Install the required packages using the command:
@@ -37,12 +42,29 @@ pip install ipympl
 The model requires the input of the following quantities:
 
 • Mass of the star
+
 • Chemical composition of the star
+
 • Initial guess of central pressure
+
 • Initial guess of central temperature
+
 • Initial guess of radius
+
 • Initial guess of luminosity
+
 • Mass fraction of the fitting point
+
+The input of mass and composition should be in the format as follow:
+
+```
+M_total = 1.2 * M_sun
+X = 0.72
+Z = 0.01
+Y = 1.0 - X - Z
+```
+
+X is the mass fraction of hydrogen, Y is the mass fraction of helium, and Z is the mass fraction of metals. Notably, the sum of X, Y, and Z should equal to zero to ensure the physical valid model.
 
 If the initial gusses is None, then the model will use the apprximated initial gusses from mass-scaling guesses. 
 
