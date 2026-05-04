@@ -68,7 +68,7 @@ X is the mass fraction of hydrogen, Y is the mass fraction of helium, and Z is t
 
 If the initial gusses is None, then the model will use the apprximated initial gusses from mass-scaling guesses. 
 
-The choice of fitting point can affect the runtime and the number of iterations required for convergence. The maximum iterations is set as 100 in this model, and can be changed by changing "maxfev". The threshold of convergence is set as the residual smaller than $10^-5$ and can be changed by changing "xtol".
+The choice of fitting point can affect the runtime and the number of iterations required for convergence. The maximum iterations is set as 100 in this model, and can be changed by changing ```maxfev```. The threshold of convergence is set as the residual smaller than $10^{-5}$ and can be changed by changing ```xtol```.
 
 ```
 res = root(
@@ -80,7 +80,9 @@ res = root(
     )
 ```
 
-The adjust of initial gussesd fitting point an is recommended for shorter runtime and fewer iterations.
+The adjustment of initial gusseses and fitting point is recommended for shorter runtime and fewer iterations. 
+
+The model prints the number of iterations required for convergence.
 
 ## Import Statements
 The script begins with necessary import statements for data manipulation, numerical operations, plotting, and statistical analysis:
@@ -102,6 +104,24 @@ from matplotlib.ticker import MultipleLocator
 import matplotlib.ticker as mticker
 %matplotlib widget
 ```
+
+## Opacity Table
+
+The opacity table with different compositions should be downloaded from [The Opacity Project](https://cds.unistra.fr/topbase/home.html).
+
+For the model, the table should be downloaded using the option "RMOs for a single chemical mixture," and with the table format $\{\log_{10}(T),\log_{10}(R)\}$. 
+
+The downloaded opacity table should be renamed according to the format `op_X0p72_Z0p01_logT_logR.txt`, where `X0p72` and `Z0p01` indicate the adopted hydrogen and metal mass fractions, \(X=0.72\) and \(Z=0.01\), respectively.
+
+All opacity tables should be located in the `opacity_tables` folder.
+
+If the opacity table for certain composition is not available in the `opacity_tables` folder, the model will automatically approximate the opacity by using $\kappa=\kappa_{\rm es}+\kappa_{\rm bf}+\kappa_{\rm ff}+\kappa_{\rm H^-}$.
+
+Notably, the approximation of opacity could be inaccurate, so the downloaded opacity table is recommended.
+
+The model prints whether it is using an opacity table and, if so, which table is used.
+
+## Algorithm
 
 ## Results
 
